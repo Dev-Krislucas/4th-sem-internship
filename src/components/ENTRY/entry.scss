@@ -1,0 +1,54 @@
+@import "../mixins.scss";
+
+body{
+    margin:0;
+    padding: 0;
+    
+}
+@keyframes delayEntry{
+    0%{
+        opacity:0;
+        transform:scale(.5);
+
+    }
+    50%{
+        opacity:1;
+        transform: scale(1.4);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+@include respond(phone){
+    .landing-image-container{
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+        // border:2px solid;
+        justify-content: space-between;
+        height: 100vh;
+    }
+   .landing-image-c{
+    flex:2;
+    // border:2px solid;
+    align-items: center;
+   }
+    .landing-image{
+        height: 200px;
+        width: 400px;
+        // border:3px solid;
+        margin-top:33%;
+        opacity:0;
+        animation:delayEntry 1s ease-in-out 1s forwards ;
+
+    }
+    .landing-text{
+        background-color:  #7109b6;
+        color:white;
+        padding-top:1px;
+        padding-bottom: 1px;
+        letter-spacing: 1.3px;
+    }
+
+}
