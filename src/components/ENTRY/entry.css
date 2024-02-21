@@ -20,7 +20,7 @@ body {
 @media (min-width: 0em) and (max-width: 37.5em) {
   .first-page-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-end;
     height: 100vh;
   }

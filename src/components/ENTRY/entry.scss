@@ -23,7 +23,7 @@ body{
 @include respond(phone){
     .first-page-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-end;
         // border: 2px solid;
         height: 100vh;
