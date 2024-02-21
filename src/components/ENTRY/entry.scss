@@ -21,34 +21,51 @@ body{
     }
 }
 @include respond(phone){
-    .landing-image-container{
-        display:flex;
+    .first-page-container{
+        display: flex;
         flex-direction: column;
-        text-align:center;
-        // border:2px solid;
-        justify-content: space-between;
+        justify-content: flex-end;
+        // border: 2px solid;
         height: 100vh;
-    }
-   .landing-image-c{
-    flex:2;
-    // border:2px solid;
-    align-items: center;
-   }
-    .landing-image{
-        height: 200px;
-        width: 400px;
-        // border:3px solid;
-        margin-top:33%;
-        opacity:0;
-        animation:delayEntry 1s ease-in-out 1s forwards ;
 
     }
-    .landing-text{
-        background-color:  #7109b6;
-        color:white;
-        padding-top:1px;
-        padding-bottom: 1px;
-        letter-spacing: 1.3px;
+    .first-page-logo{
+        // border:2px solid;
+        height:200px;
+        width:400px;
+        animation:delayEntry 2s ease-in-out 2s forwards ;
+    }
+    .first-page-image{
+        text-align: center;
+        // border:2px solid;
+        flex:9;
+        padding-top: 20%;
+        
+        
+    }
+    .first-page-text{
+        background-color: #7109b6;
+        color: #fff;
+        text-align: center;
+        flex:1;
     }
 
 }
+@include respond(tab-potrait){
+
+}
+@include respond(tab-landscape){
+    
+}
+
+@include respond(desktop){
+
+}
+
+
+
+
+
+
+//7109b6
+

@@ -2,17 +2,17 @@
 import "./entry.css";
 let Entry = ()=>{
     return(
-        <div className="landing-image-container">
-            <div className="landing-image-c">
-            <img src="./photos/logo.png" alt="Logoss" className="landing-image"/>
+        <div className="first-page-container">
+            <div className="first-page-image">
+                <img src="./photos/logo.png" alt="logo-first" className="first-page-logo"/>
+
             </div>
+            <div className="first-page-text">
+                <h4>Made with love by Krislucas & team</h4>
 
-
-            <div className="landing-text">
-                <p>Made with love by Krislucas Thomas & team</p>
             </div>
-
-</div>
+            
+        </div>
 
 
 

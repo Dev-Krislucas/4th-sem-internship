@@ -18,29 +18,26 @@ body {
   }
 }
 @media (min-width: 0em) and (max-width: 37.5em) {
-  .landing-image-container {
+  .first-page-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100vh;
   }
-  .landing-image-c {
-    flex: 2;
-    align-items: center;
+  .first-page-logo {
+    height: 200px;
+    width: 400px;
+    animation: delayEntry 2s ease-in-out 2s forwards;
   }
-  .landing-image {
-    height: 250px;
-    width: 450px;
-    margin-top: 33%;
-    opacity: 0;
-    animation: delayEntry 1s ease-in-out 1s forwards;
+  .first-page-image {
+    text-align: center;
+    flex: 9;
+    padding-top: 20%;
   }
-  .landing-text {
+  .first-page-text {
     background-color: #7109b6;
-    color: white;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    letter-spacing: 1.3px;
+    color: #fff;
+    text-align: center;
+    flex: 1;
   }
 }/*# sourceMappingURL=entry.css.map */
