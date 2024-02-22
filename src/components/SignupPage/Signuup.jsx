@@ -9,8 +9,8 @@ let Signup = ()=>{
                 <img src="./photos/logo.png" alt="signup-page-logo" className="signup-page-logo"/>  
             </div>
             <div className="child-row">
-                <input type="text" name="name"/>
-                <select name="interest" id="">
+                <input type="text" name="name" className="signup-text" placeholder="Name"/>
+                <select name="interest" id="" className="signup-select">
                     <option value="agriculture">Agriculture</option>
                     <option value="finance">Finance</option>
                     <option value="finance">Technology</option>
@@ -19,18 +19,18 @@ let Signup = ()=>{
                 </select>
             </div>
             <div className="child-row">
-                <input type="text" name="email" placeholder="Email"/>
-                <input type="text" name="password" placeholder="password"/>
+                <input type="text" name="email" placeholder="Email" className="signup-text"/>
+                <input type="text" name="password" placeholder="password" className="signup-text"/>
             </div>
             <div className="child-row">
-                <input type="text" name="city" placeholder="City"/>
-                <select name="role" id="">
+                <input type="text" name="city" placeholder="City" className="signup-text"/>
+                <select name="role" id="" className="signup-select">
                     <option value="investor">Investor</option>
                     <option value="raiser">Fund Raiser</option>
                 </select>
             </div>
             <div className="child">
-                <textarea name="description" id="" ></textarea>
+                <textarea name="description" id="" className="signup-description"placeholder="Description " ></textarea>
             </div>
             <div className="child">
                 <button type="submit" className="signup_button">Sign In</button>
