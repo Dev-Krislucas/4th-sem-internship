@@ -1,8 +1,31 @@
 
 import "./entry.css";
+import Signup from "../SignupPage/Signuup";
+
+import { useState,useEffect } from "react";
 let Entry = ()=>{
+    const [isVisible,setIsVisible] = useState(true);
+    useEffect(()=>{
+        const timer  =  setTimeout(() => {
+            setIsVisible(false)
+            
+        }, (4000));
+
+        return ()=> clearTimeout(timer);
+
+
+    },[])
+
+
+
+
+
+
     return(
-        <div className="first-page-container">
+        <>
+        {
+            isVisible?(
+                <div className="first-page-container">
             <div className="first-page-image">
                 <img src="./photos/logo.png" alt="logo-first" className="first-page-logo"/>
 
@@ -14,6 +37,10 @@ let Entry = ()=>{
             
         </div>
 
+            ) :<Signup/>
+        }
+        
+        </>
 
 
 
