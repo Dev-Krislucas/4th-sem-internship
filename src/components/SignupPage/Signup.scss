@@ -1,4 +1,47 @@
 @import "../mixins.scss";
-@include respond(){
+@include respond(phone){
+    .signup-page{
+        display:flex;
+        flex-direction: column;
+        justify-content: stretch;
+        border:1px solid;
+        height: 100vh;
+        padding: 5% 3%;
+        
+    }
+    .signup-page > div{
+        text-align: center;
+        margin:20px 20px;
+        
+        
+    }
+    .child-row{
+        display:flex;
+        flex-direction: row;
+    }
+    .child{
+        text-align:center;
+    }
+    .signup-page-logo{
+        height:130px;
+        width: 230px;;
+    }
+    .signup_button{
+        height:40px;
+        width: 120px;
+        background-color: #7109b6;
+        color:#fff;
+        letter-spacing:.8px;
+        border: 0;
+        border-radius: 10px;
+        font-size:17px;
+        font-weight: bold;
+    }
+    #color_primary{
+        color: #7109b6;
+        font-weight: 700;
+    }
+
+
     
 }
