@@ -20,7 +20,7 @@ let Signup = ()=>{
             </div>
             <div className="child-row">
                 <input type="text" name="email" placeholder="Email" className="signup-text"/>
-                <input type="text" name="password" placeholder="password" className="signup-text"/>
+                <input type="text" name="password" placeholder="Password" className="signup-text"/>
             </div>
             <div className="child-row">
                 <input type="text" name="city" placeholder="City" className="signup-text"/>

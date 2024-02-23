@@ -42,7 +42,7 @@
         font-weight: 700;
     }
     .signup-text{
-        height: 30px;
+        height: 45px;
         width:50%;
         border-radius:5px;
         border:0;
@@ -53,13 +53,14 @@
         padding:0px;
     }
     .signup-select{
-        height: 30px;
+        height: 45px;
         width: 50%;
         outline: none;
         border:0;
         background-color: #eee;
         padding:4px;
         border-radius:5px;
+        color:grey;
     }
     .signup-description{
         width:100%;
@@ -68,6 +69,11 @@
         outline:none;
         border:0;
         border-radius:5px;
+    }
+    ::placeholder{
+        text-align: left;
+        text-indent: 10px;
+        // color:;
     }
 
 
