@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Entry from "./components/ENTRY/Entry";
+import Login from "./components/Login/login";
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Entry/>} />
-        {/* <Route to="" element={} /> */}
+        <Route path="/login" element={<Login />} />
         {/* <Route to="" element={} /> */}
         {/* <Route to="" element={} /> */}
         {/* <Route to="" element={} /> */}

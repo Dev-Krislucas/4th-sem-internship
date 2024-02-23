@@ -10,7 +10,7 @@ let Signup = ()=>{
             </div>
             <div className="child-row">
                 <input type="text" name="name" className="signup-text" placeholder="Name"/>
-                <select name="interest" id="" className="signup-select">
+                <select name="interest" id="" className="signup-select" placeholder="Interest">
                     <option value="agriculture">Agriculture</option>
                     <option value="finance">Finance</option>
                     <option value="finance">Technology</option>
@@ -36,7 +36,7 @@ let Signup = ()=>{
                 <button type="submit" className="signup_button">Sign In</button>
             </div>
             <div className="child">
-                <p>Already Signed Up ? <span id ="color_primary">Login</span> </p>
+                <p>Already Signed Up ? <Link to="/login" ><span id ="color_primary">Login</span></Link> </p>
 
             </div>
         
